@@ -37,7 +37,7 @@ const data = {
     
 };
 try {
-    const result = await CiudadanoModel.create(data);
+    const result = await PrediosModel.create(data);
     res.json({result});
 } catch (error) {
     res.status(500).json({error: "error al registrar el ciudadano"});
